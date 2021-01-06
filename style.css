@@ -1,0 +1,287 @@
+body{
+    min-height: 100%;
+    margin: 0px;
+    width: 100%;
+}
+p,label,figcaption,a{
+    font-family: 'Ubuntu', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'Henny Penny', cursive; 
+}
+header{
+    width: 100%;
+    margin: 0 auto;
+    background-color:#151515;
+    opacity: 1;
+    height: 50px;
+}
+header span{
+    color: white;
+    position: absolute;
+    top: 23px;
+    left: 170px;
+}
+header img{
+    position: absolute;
+    top: 23px;
+    left: 70px;
+}
+header nav{
+    float: right;
+    list-style-type: none;
+    padding: 13px;
+    position: relative;
+    bottom: 15px;
+    }
+nav li{
+    display: inline;
+    padding: 15px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.food{
+    width: 100%;
+    height: 730px;
+    background-color: #010101;
+    position: relative;
+    bottom: 25px;
+}
+.food img{
+    float: right;
+    height: 550px;
+    width: auto;
+    position: relative;
+    bottom: 40px;
+}
+.food h1,button{
+    color: white;
+    position: relative;
+    left: 180px;
+    top: 180px;
+}
+.food button{
+    background-color: #FDA337;
+    color: #080707da;
+    width: 120px;
+    border-radius: 20px;
+}
+.plate{
+    background-color: #e5e5e5;
+    height: 650px;
+    position: relative;
+    bottom: 30px;
+}
+.plate div{
+    float: right;
+    position: relative;
+    right: 70px;
+    top: 200px;
+  
+}
+.plate p{
+    width: 400px;
+    line-height: 30px;
+}
+.plate img{
+    height: 500px;
+    width: auto;
+    position: relative;
+    top: 80px;
+    left: 100px;
+}
+main{
+    height: 700px;
+    background-color: #FDA337;
+    position: relative;
+    bottom: 55px;
+}
+main h1{
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+.menus {
+    display: flex;
+}
+.menus div{
+    margin: 30px;
+    position: relative;
+    top: 50px;
+}
+.appetite,.dinner{
+    width: 350px;
+    background-color: #ffffff;
+    height: 256px;
+    border-radius: 20px;
+}
+.appetite h2{
+    text-align: center;
+}
+.appetite p{
+    position: relative;
+    left: 100px;
+}
+.dinner h2{
+    text-align: center;
+}
+.dinner p{
+    position: relative;
+    left: 100px;
+}
+.dessert h2{
+    text-align: center;
+}
+.dessert{
+    width: 350px;
+    height: 280;
+    background-color: #ffffff;
+    border-radius: 20px;
+    }
+.dessert p{
+    position: relative;
+    left: 100px;
+}
+
+hr{
+    position: relative;
+    right: 110px;
+    bottom: 25px;
+
+}
+aside{
+    width: 100%;
+    position: relative;
+    bottom: 20px;
+}
+.pizza{
+    text-align: center;
+}
+
+figure{
+    position: relative;
+    top: 50px;
+}
+figure img {
+    width: 800px;
+    height: auto;
+    position: relative;
+}
+figcaption{
+    position: absolute;
+   
+    bottom: 250px;
+    color: #ffffff;
+    left: 40px;
+}
+.form{
+    width: 400px;
+    height: 600px;
+    float: right;
+    position: relative;
+    bottom:480px;
+    right: 40px;
+    background-color: #FDA337;
+}
+.form div{
+    /*text-align: center;*/
+    position: relative;
+    left: 15px;
+    top: 30px;
+}
+div input{
+    position: relative;
+    left: 10px;
+    width: 200px;
+    border-radius: 15px;
+
+}
+section .block{
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+.block{
+    position: relative;
+    top: 190px;
+    left: 200px;
+}
+footer{
+    height: 200px;
+    position: relative;
+    top: 350px;
+    background-color: black;
+    text-align: center;
+}
+.footer{
+    color: white;
+    text-align: center;
+    position: relative;
+    left: 200px;
+    top: 20px;
+}
+  
+@media screen and (max-width: 765px){
+    body{
+        width: 100%;
+        margin: auto;
+        min-height: 100%;
+    } 
+     
+    .food div{
+         display: none;
+     }
+    .food{
+        background-image: url(img/Rectangle.png);
+        background-size: cover;
+        height: 730px;
+        width: auto;
+    }
+    .food h1,button{
+        position: relative;
+        top: 300px;
+     }
+     .plate img{
+         display: none;
+     }
+     /*aside img {
+         display: none;
+     }*/
+      aside figure{
+         display: none;
+     }
+    aside .form{
+     position: relative;
+     top: 25px;
+    }
+     .menus{
+        flex-direction: column;
+       }
+        main{
+            height: 1200px;
+        }
+        .block{
+            position: absolute;
+            left: 40px;
+            width: 400px;
+            text-align: center;
+        }
+        .block img{
+            width: 350px;
+        }
+        .block h3{
+            position: absolute;
+            bottom: 390px;
+            left: 84px;
+
+        }
+         footer{
+         width: 765px;
+         }
+        .footer{
+           position: absolute;
+
+        }
+}
